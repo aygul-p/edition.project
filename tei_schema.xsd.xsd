@@ -1,0 +1,422 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TEI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="teiHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="front">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="fileDesc">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="titleStmt">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="title"/>
+                                <xs:element name="respStmt">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="resp"/>
+                                      <xs:element type="xs:string" name="name"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="publicationStmt">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="publisher"/>
+                                <xs:element type="xs:date" name="date"/>
+                                <xs:element name="availability">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="p"/>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="status"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="sourceDesc">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="bibl">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="title"/>
+                                      <xs:element type="xs:string" name="author"/>
+                                      <xs:element type="xs:string" name="publisher"/>
+                                      <xs:element type="xs:string" name="date"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="text">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="div">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="listPerson">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="person" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="persName">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="forename" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="surname" minOccurs="0"/>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="ref" use="optional"/>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:string" name="sex"/>
+                                <xs:element type="xs:string" name="roleName" minOccurs="0"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="id" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="listPlace">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="place" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="country" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="placeName" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="settlement" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="district" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="geogName">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="bloc">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="id"/>
+                                        <xs:attribute type="xs:string" name="type"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="listEvent">
+                      <xs:complexType>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element name="event" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                                  <xs:attribute type="xs:string" name="type" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="date" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                                  <xs:attribute type="xs:string" name="type" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="headLabel">
+                      <xs:complexType>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element name="term" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="type" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="measure"/>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="listRelation">
+                      <xs:complexType>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element name="population">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="id"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="nationality">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="id"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="origin">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="punctuation">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="q" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="body">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="div1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="head"/>
+                          <xs:element name="p" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType mixed="true">
+                              <xs:choice maxOccurs="unbounded" minOccurs="0">
+                                <xs:element name="country">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="event">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                        <xs:attribute type="xs:string" name="ref" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="date">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                        <xs:attribute type="xs:string" name="ref" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="persName">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="ref" use="optional"/>
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="roleName">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="ref" use="optional"/>
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="placeName">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                        <xs:attribute type="xs:string" name="ref" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="population">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="nationality">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                        <xs:attribute type="xs:string" name="ref" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="settlement">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="id"/>
+                                        <xs:attribute type="xs:string" name="type"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="origin">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="term">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="district">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="q">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="ref" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:string" name="measure"/>
+                                <xs:element name="bloc">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="id"/>
+                                        <xs:attribute type="xs:string" name="type"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:choice>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="type"/>
+                        <xs:attribute type="xs:byte" name="n"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

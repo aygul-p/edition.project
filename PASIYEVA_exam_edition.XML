@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>Wanderings in Wessex: An Exploration of the Southern Realm from Itchen to Otter</title>
+          <respStmt>
+            <resp>Publisher</resp>
+            <name>Digital Library of India</name>
+          </respStmt>
+        </titleStmt>
+        <publicationStmt>
+          <publisher>Robert Scott Roxburghe House Paternoster Row, London</publisher>
+          <date>2020-10-16</date>
+          <availability status="restricted">
+            <p>There are the obvious limitations imposed by the size of this volume upon its contents, and the brief character of the reference to localities that require separate treatment to do them justice.</p>
+          </availability>
+        </publicationStmt>
+        <sourceDesc>
+          <bibl>
+            <title>Wanderings in Wessex: An Exploration of the Southern Realm from Itchen to Otter</title>
+            <author>Edric Holmes</author>
+            <publisher>Allama Iqbal Library, University Of Kashmir</publisher>
+            <date>8/6/2015</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div>
+        <listPerson>
+            <person xml:id="Vigilantius">
+              <persName ref="#Vigilantius">
+                <forename>Vigilantius</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>historian</occupation>
+            </person>
+            <person xml:id="Lucius">
+              <persName ref="#Lucius">
+                <forename>Lucius</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>king</occupation>
+            </person>
+            <person xml:id="Belgae">
+              <persName ref="#Belgae">Belgae</persName>
+            </person>
+          <person xml:id="Roman">
+            <persName ref="#Roman">Roman</persName>
+          </person>
+          <person xml:id="West_Saxon">
+            <persName ref="#West_Saxon">West Saxon</persName>
+          </person>
+            <person xml:id="Cerdic">
+              <persName ref="#Cerdic">
+                <forename>Cerdic</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>king</occupation>
+            </person>
+            <person xml:id="Birinus">
+              <persName ref="#Birinus">
+                <forename>Birinus</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>bishop</occupation>
+            </person>
+            <person xml:id="Cynegils">
+              <persName ref="#Cynegils">
+                <forename>Cynegils</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>king</occupation>
+            </person>
+            <person xml:id="St_Peter">
+              <persName ref="#St_Peter">
+                <forename>Peter</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>bishop</occupation>
+            </person>
+            <person xml:id="Paul">
+              <persName ref="#Paul">
+                <forename>Paul</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>bishop</occupation>
+            </person>
+            <person xml:id="Egbert">
+              <persName ref="#Egbert">
+                <forename>Egbert</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>king</occupation>
+            </person>
+            <person xml:id="St_Swithun">
+              <persName ref="#St_Swithun">
+                <forename>Swithun</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>bishop</occupation>
+            </person>
+            <person xml:id="Danes">
+              <persName ref="#Danes">Danes</persName>
+            </person>
+            <person xml:id="St_Grimald">
+              <persName ref="#St_Grimald">
+                <forename>Grimald</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>abbot</occupation>
+            </person>
+            <person xml:id="Edgar">
+              <persName ref="#Edgar">
+                <forename>Edgar</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>king</occupation>
+            </person>
+            <person xml:id="Alfred">
+              <persName ref="#Alfred">
+                <forename>Alfred</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>king</occupation>
+            </person>
+            <person xml:id="Athelwold">
+              <persName ref="#Athelwold">
+                <forename>Athelwold</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>bishop</occupation>
+            </person>
+            <person xml:id="Canute">
+              <persName ref="#Canute">
+                <forename>Canute</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>conqueror</occupation>
+            </person>
+            <person xml:id="St_Edward">
+              <persName ref="#St_Edward">
+                <forename>Edward</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>king</occupation>
+            </person>
+            <person xml:id="William_I">
+              <persName ref="#William_I">
+                <forename>William</forename>
+              </persName>
+              <sex>M</sex>
+            </person>
+            <person xml:id="Walkelyn">
+              <persName ref="#Walkelyn">
+                <forename>Walkelyn</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>bishop</occupation>
+            </person>
+            <person xml:id="Rufus">
+              <persName ref="#Rufus">
+                <surname>Rufus</surname>
+              </persName>
+              <sex>M</sex>
+            </person>
+            <person xml:id="Lucy">
+              <persName ref="#Lucy">
+                <surname>Lucy</surname>
+              </persName>
+              <sex>M</sex>
+              <occupation>bishop</occupation>
+            </person>
+            <person xml:id="Wykeham">
+              <persName ref="#Wykeham">
+                <surname>Wykeham</surname>
+              </persName>
+              <sex>M</sex>
+              <occupation>bishop</occupation>
+            </person>
+            <person xml:id="Edyngton">
+              <persName ref="#Edyngton_1">
+                <surname>Edyngton</surname>
+              </persName>
+              <sex>M</sex>
+              <occupation>bishop</occupation>
+            </person>
+            <person xml:id="St_Nicholas">
+              <persName ref="#St_Nicholas">
+                <forename>Nicholas</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>bishop</occupation>
+            </person>
+            <person xml:id="Harold_Browne">
+              <persName ref="#Harold_Browne">
+                <forename>Harold</forename>
+                <surname>Browne</surname>
+              </persName>
+              <sex>M</sex>
+              <occupation>bishop</occupation>
+            </person>
+            <person xml:id="Garbett">
+              <persName ref="#Garbett">
+                <forename>Garbett</forename>
+              </persName>
+              <sex>M</sex>
+            </person>
+            <person xml:id="Coutier">
+              <persName ref="#Coutier">
+                <surname>Coutier</surname>
+              </persName>
+              <sex>M</sex>
+            </person>
+            <person xml:id="Richard_II">
+              <persName ref="#Richard_II">
+                <forename>Richard</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>king</occupation>
+            </person>
+            <person xml:id="Mary_I">
+              <persName ref="#Mary_I">
+                <forename>Mary</forename>
+              </persName>
+              <sex>F</sex>
+              <occupation>queen</occupation>
+            </person>
+            <person xml:id="Waller">
+              <persName ref="#Waller">
+                <forename>Waller</forename>
+              </persName>
+              <sex>M</sex>
+            </person>
+            <person xml:id="Kingsmill">
+              <persName ref="#Kingsmill">
+                <surname>Kingsmill</surname>
+              </persName>
+              <sex>M</sex>
+            </person>
+            <person xml:id="William_Rufus">
+              <persName ref="#William_Rufus">
+                <forename>William</forename>
+                <surname>Rufus</surname>
+              </persName>
+              <sex>M</sex>
+            </person>
+            <person xml:id="Philip">
+              <persName ref="#Philip">
+                <forename>Philip</forename>
+              </persName>
+              <sex>M</sex>
+              <occupation>king</occupation>
+            </person>
+            <person xml:id="Fox">
+              <persName ref="#Fox">
+                <surname>Fox</surname>
+              </persName>
+              <sex>M</sex>
+              <occupation>bishop</occupation>
+            </person>
+          </listPerson>
+          <listPlace>
+            <place xml:id="England">
+              <placeName type="main">England</placeName>
+            </place>
+            <place xml:id="Venta_Belgarum">
+              <placeName type="town">Venta Belgarum</placeName>
+            </place>
+            <place xml:id="Caer_Gwent">
+              <placeName type="town">Caer Gwent</placeName>
+            </place>
+            <place xml:id="Winchester">
+              <placeName>Winchester</placeName>
+              <district type="city">Wessex</district>
+              <country>England</country>
+            </place>
+            <place xml:id="Roman_antiquities">
+              <placeName type="building"> Roma antiquities</placeName>
+            </place>
+            <place xml:id="Roman_town">
+              <placeName type="town">Roman town</placeName>
+            </place>
+            <place xml:id="Wessex">
+              <placeName>Wessex</placeName>
+              <region>Southwestern England</region>
+            </place>
+            <place xml:id="Southern_england">
+              <placeName type="borough">Southern England</placeName>
+            </place>
+            <place xml:id="Southampton">
+              <placeName type="town">Southampton</placeName>
+              <district>Hampshire</district>
+              <country>England</country>
+            </place>
+            <place xml:id="Dorchester">
+              <placeName type="county">Dorchester</placeName>
+              <district>Dorset</district>
+              <country>England</country>
+            </place>
+            <place xml:id="Thames">
+              <placeName type="river">Thames</placeName>
+              <district>London</district>
+              <country>England</country>
+            </place>
+            <place xml:id="Rome">
+              <district type="city">Rome</district>
+              <country>Italy</country>
+            </place>
+            <place xml:id="London">
+              <placeName type="city">London</placeName>
+              <country>England</country>
+            </place>
+            <place xml:id="Walkelyn_s_tower">
+              <placeName type="tower">Walkelyn's tower</placeName>
+              <district>West Yorkshire</district>
+              <country>England</country>
+            </place>
+            <place xml:id="Tournai">
+              <district type="city">Tournai</district>
+              <region>Wallonia</region>
+              <country>Belgium</country>
+            </place>
+            <place xml:id="Bishop_Edyngton_s_chantry">
+              <placeName type="chapel">Bishop Edyngton's chantry</placeName>
+              <district>Wiltshire</district>
+              <country>England</country>
+            </place>
+            <place xml:id="Spain">
+              <placeName type="nation">Spain</placeName>
+              <bloc>Southwestern Europe</bloc>
+            </place>
+            <place xml:id="Europe">
+              <placeName type="continet">Europe</placeName>
+            </place>
+          </listPlace>
+          <listOrg>
+            <org xml:id="Christian_church">
+              <orgName type="church">Christian church</orgName>
+            </org>
+            <org xml:id="Winchester_cathedral">
+              <orgName type="church">Winchester_cathedral</orgName>
+            </org>
+            <org xml:id="St_Mary_s_abbey">
+              <orgName type="abbey">St. Mary's abbey</orgName>
+            </org>
+            <org xml:id="Benedictine_Nunnaminister">
+              <orgName type="abbey">Benedictine_Nunnaminister</orgName>
+            </org>
+            <org xml:id="Newminister">
+              <orgName type="abbey">Newminister</orgName>
+            </org>
+            <org xml:id="Norman_church">
+              <orgName type="church">Newminister</orgName>
+            </org>
+            <org xml:id="Early_English_choir">
+              <orgName type="cathedral">Early English Choir</orgName>
+            </org>
+          </listOrg>
+          <listEvent>
+            <event  xml:id="Celtic_conquest" type="conquest">
+              <eventName>Celtic conquest</eventName>
+            </event>
+            <event xml:id="Neolithic" type="period">
+              <eventName>Neolithic</eventName>
+            </event>
+            <event xml:id="Danish_terror" type="terror">
+              <eventName>Danish terror</eventName>
+            </event>
+            <event when ="0164" type="AD">
+              <eventName>164</eventName>
+            </event>
+            <event xml:id="Celtic_age">
+              <eventName>Celtic age</eventName>
+            </event>
+            <event when="0520">
+              <eventName>520</eventName>
+            </event>
+            <event when="0674">
+              <eventName>674</eventName>
+            </event>
+            <event when="0852">
+              <eventName>852</eventName>
+            </event>
+            <event xml:id="Swithun_day">
+              <eventName>Swithun's day</eventName>
+             </event>
+            <event xml:id="St_Swithun_s">
+              <eventName>St. Swithun's</eventName>
+            </event>
+            <event xml:id="St_Swithun_s_day">
+              <eventName>St. Swithun's day</eventName>
+            </event>
+            <event when="1093">
+              <eventName>1093</eventName>
+            </event>
+            <event when="1107">
+              <eventName>1107</eventName>
+            </event>
+            <event when="1200">
+              <eventName>1200</eventName>
+            </event>
+            <event when="1510">
+              <eventName>1510</eventName>
+            </event>
+            <event when="1891">
+              <eventName>1891</eventName>
+            </event>
+            <event when="1826-07">
+              <eventName>1826-7</eventName>
+            </event>
+            <event when="1534">
+              <eventName>1534</eventName>
+            </event>
+            <event when="1520">
+              <eventName>1520</eventName>
+            </event>
+            <event xml:id="Edward_confessor_s_coronation" type="coronation">
+              <eventName>Edward Confessor's coronation</eventName>
+            </event>
+            <event when="1043">
+              <eventName>1043</eventName>
+            </event>
+            <event when="1296">
+              <eventName>1296</eventName>
+            </event>
+            <event when="1390">
+              <eventName>1390</eventName>
+            </event>
+          </listEvent>
+          <index>
+              <term type="archeological">Remains</term>
+              <term type="architectural_style">Gothic</term>
+              <term type="architectural_style">Saxon</term>
+              <term type="architectural_style">Norman</term>
+              <term type="architectural_style">Perpendicular</term>
+              <term type="measure">556 feet</term>
+              <term type="measure">217 feet</term>
+              <term type="origin">British</term>
+          </index>            
+          <q>
+            <emph>"sights"</emph>
+            <emph>"screen"</emph>
+            <emph>"restorer"</emph>
+          </q>
+      </div>         
+    </front>
+    <body>
+        <div type="chapter" n="1">
+            <head>Chapter 1: WINCHESTER AND CENTRAL HAMPSHIRE</head>
+            <p>The foundations of the ancient capital of <placeName ref="#England">England</placeName> were probably laid
+                when the waves of <eventName ref="#Celtic_conquest">Celtic conquest</eventName> that had submerged the <eventName ref="#Neolithic">Neolithic</eventName> men
+                stilled to tranquillity. The earliest records left to us are many generations later and they are obscure and doubtful, but according to
+                <persName ref="#Vigilantius">Vigilantius</persName>, an early <roleName>historian</roleName> whose lost writings have been quoted
+                by those who followed him, a great <orgName ref="#Christian church" type="church">Christian church</orgName> was re-erected
+                here in <date when="0164" type="AD">A.D. 164</date> by <persName ref="#Lucius">Lucius</persName>, <roleName>King</roleName> of the <persName ref="#Belgae" type="population">Belgae</persName>, on the site of a
+                building destroyed during a temporary revival of paganism. The <persName ref="#Roman" type="nationality">Roman</persName>
+                <roleName>masters</roleName> of <persName ref="#Lucius">Lucius</persName> called his capital, rebuilt under their tuition,
+                <placeName ref="#Venta Belgarum" type="town">"Venta Belgarum"</placeName>. The <persName ref="#British">Bitish name</persName> name--<placeName ref="#Caer Gwent" type="town">Caer Gwent</placeName>--belonged to the
+                original settlement. The size and boundaries of both are uncertain.
+                <term type="archeological">Remains</term> of the <eventName>Celtic age</eventName> are practically non-existent beneath
+                <placeName ref="#Winchester">Winchester</placeName>, though the surrounding hills are plentifully strewn with
+                them, and if <placeName ref="#Roman_antiquities" type="building">Roman antiquities</placeName> occasionally turn up when the
+                foundations of new buildings are being prepared, any plan of the <placeName ref="#Roman_town" type="towm">Roman town</placeName>
+                is pure conjecture. The true historic interest of <placeName ref="#Winchester" type="city">Winchester</placeName>, and
+                historically it is without doubt the most interesting city in <placeName ref="#England">England</placeName>,
+                dates from the time of those <persName ref="#West_Saxon">West Saxon</persName> chiefs who gave it the
+                important standing which was eventually to make it the metropolis of the
+                <persName ref="#English">English</persName>.The early history of <placeName ref="#Winchester" type="city">Winchester</placeName>is the history of <placeName ref="#Wessex" type="nation">Wessex</placeName>, and when
+                <persName ref="#Cerdic">Cerdic</persName>decided to make it the capital of his new kingdom, about <date when="0520">520</date>,
+                it was probably the only commercial centre in the state, with
+                <placeName ref="#Southampton" type="town">Southampton</placeName> as its natural port and allied town. As the peaceful
+                development of <placeName ref="#Wessex" type="nation">Wessex</placeName> went on, so the population and trade of the
+                capital grew until in a little over a hundred years, when <persName ref="#Birinus">Birinus</persName> came
+                from over seas bearing the cross of the faith that was soon to spread
+                with great rapidity over the whole of <placeName ref="#Southern_England" type="borough">Southern England</placeName>, he found here
+                a flourishing though pagan town. After the conversion of <roleName>King</roleName> <persName ref="#Cynegils">Cynegils</persName>
+                the first <placeName ref="#Wessex" type="nation">Wessex</placeName> <roleName>bishopric</roleName> was founded at <placeName ref="#Dorchester" type="town">Dorchester</placeName>near the banks of
+                the <placeName ref="#Thames" type="river">Thames</placeName>, but by <date when="0674">674</date>this was removed to the capital where there had
+                been built a small church dedicated to <persName ref="#St_Peter">St. Peter</persName> and <persName ref="#Paul">Paul</persName>, probably on
+                the site now occupied by the cathedral and originally by the church of <persName ref="#Lucius">Lucius</persName> and its predecessor.</p>
+          
+            <p>The great structure we see to-day is remarkable in many ways. It is
+               the longest <term type="architectural_style">Gothic</term> building in the world, and is only exceeded by 
+               <persName ref="#St_Peter">St.Peter</persName>'s in <placeName ref="#Rome" type="city">Rome</placeName>. In spite of the disappointment the stranger
+               invariably experiences at his first sight of the squat tower and
+                straight line of wall, its majestic interior, and the indefinable
+                feeling that this is still a temple and not a mere museum, will soon
+                give rise to a sense of reverent appreciation that makes one linger
+                long after the usual round of <emph>"sights"</emph> has been accomplished. The war
+                memorial, dignified and austere, that was placed outside the west
+                front in the <date when="1921" type="autumn">autumn of 1921</date>, is a most effective foil to the
+                singularly unimposing pile of stone and glass behind it. But, however
+                it may lack the elegance of the usual west <emph>"screen"</emph>, this end of
+                <orgName ref="#Winchester_cathedral" type="cathedral">Winchester Cathedral</orgName> has the great merit of being architecturally true.</p>
+  
+            <p>Of the first <term type="architectural_style">Saxon</term> building nothing remains. In this <persName ref="#Egbert">Egbert</persName> was
+                crowned <roleName>King</roleName> of the <persName ref="#English" type="population">English</persName> in <date when="0827">827</date>. It was strongly fortified by <persName ref="#St_Swithun">St.Swithun</persName>, who was <roleName>bishop</roleName> for ten years from <date when="0852">852</date>. At his urgent request
+                he was buried in the churchyard instead of within the cathedral walls.
+                Another generation wishing to honour the saint commenced the removal
+                of the relics. On the day set aside for this--<eventName>Swithun's day</eventName>--a
+                violent storm of rain came on and continued for forty days, thus
+                giving rise to the old and well known superstition of the forty days
+                of rain following <eventName>St. Swithun's</eventName> should that day be wet.</p>
+                  
+            <p>Under <roleName>Bishop</roleName> <persName ref="#Swithun">Swithun</persName>'s direction the clergy and servants of the
+               cathedral successfully resisted an attack by the <persName ref="#Danes" type="population">Danes</persName> when the
+               remainder of the city was destroyed. Soon after this, in the midst of
+               the <eventName>Danish terror</eventName>, <persName ref="#Alfred">Alfred</persName> became <roleName>king</roleName> and here he founded two
+               additional religious houses, <orgName ref="#St_Mary_s_abbey" type="abbey">St. Mary's Abbey</orgName>,
+               the <orgName ref="#Benedictine_Nunnaminister"  type="nunnery">Benedictine "Nunnaminster"</orgName>; and <orgName ref="#Newminister" type="abbey">Newminster</orgName> on the north side of the cathedral. Of
+               this latter <persName ref="#Grimald" type="abbot">St. Grimald</persName> was abbot. Nearly a hundred years later, in
+               <persName ref="#Edgar">Edgar</persName>'s reign, the cathedral itself became a monastery, with <roleName>Bishop</roleName> <persName ref="#Athelwold">Athelwold</persName>
+               as first abbot. He rebuilt the cathedral, dedicating it to
+               <persName ref="#St_Swithun">St. Swithun</persName>; it had been originally dedicated to <persName ref="#St_Peter">St.Peter</persName> and <persName ref="#Paul">Paul</persName>.
+               Within this fabric <persName ref="#Canute">Canute</persName> and his wife were buried; that earlier
+               <roleName>Conqueror</roleName> of the <persName ref="#English">English</persName> having made <placeName ref="#Winchester" type="city">Winchester</placeName> his imperial capital.
+               A few years later, on <eventName>Easter Day</eventName>, the coronation of <persName ref="#St_Edward_1">St. Edward</persName> took
+               place with great pomp. Soon after the advent of <persName ref="#William_I">William I</persName>, who made
+               <district ref="#Winchester" type="city">Winchester</district> a joint metropolis with <district ref="#London" type="city">London</district> and was crowned in both, the
+               building of the great <orgName ref="#Norman_church" type="church">Norman church</orgName> by <roleName>Bishop</roleName> <persName ref="#Walkelyn">Walkelyn</persName> was begun; the
+               consecration taking place on <eventName>St. Swithun's day</eventName> <date when="1093">1093</date>. Of this structure
+               the crypt and transepts remain practically untouched. The nave, though
+               <term type="architectural_style">Norman</term> at its heart, has been altered in a most interesting way to
+               <term type="architectural_style">Perpendicular</term> without scrapping the earlier work. <placeName ref="#Walkelyn_s_tower" type="tower">Walkelyn's tower</placeName>
+               fell in and ruined the choir in <date when="1107">1107</date>, legend says as a protest against
+               the body of <persName ref="#Rufus">Rufus</persName> being placed beneath it. The present low tower
+               immediately took its place. <roleName>Bishop</roleName> de <persName ref="#Lucy">Lucy</persName> was responsible for
+               rebuilding the Early English <orgName ref="#Early_English_choir" type="cathedral">Early English choir</orgName> about <date when="1200">1200</date>. The famous <roleName>Bishop</roleName> <persName ref="#Wykeham">Wykeham</persName>
+               completed the work of his predecessor, <persName ref="#Edyngton">Edyngton</persName>, in rebuilding
+               the west front, and he it was who beautified the nave. The great east
+               window dates from about <date when="1510">1510</date>; the lady chapel being rather earlier in date.</p>
+                  
+             <p>The extreme length of the cathedral is <term type="measure">556 feet</term>; the breadth of the
+               transepts being <term type="measure">217 feet</term> feet, and as the nave is entered the majestic
+              proportions of the great church will be at once appreciated.
+              Particular notice should be taken of the black font brought from
+              <placeName ref="#Tournai" type="city">Tournai</placeName>; it has the story of <persName ref="#St_Nicholas">St. Nicholas</persName> carved upon it. The
+              situation of this and the tombs and other details will be quickly
+              identified by reference to the plan. On the south side is the chantry
+              of <roleName>Bishop</roleName> <persName ref="#Wykeham">Wykeham</persName>, now fitted up as a chapel. Farther east is a
+              modern effigy, much admired, of <roleName>Bishop</roleName> <persName ref="#Harold_Browne">Harold Browne</persName>, who died in
+              <date when="1891">1891</date>. A very beautiful iron grille that once protected the shrine of
+              <placeName ref="#St_Swithun" type="shrine">St. Swithun</placeName> now covers a door on the north side of the nave. Certain
+              of the piers in the nave were repaired in <date when="1826-07">1826-7</date> and the <emph>"restorer"</emph>,
+              one <persName ref="#Garbett">Garbett</persName>, inserted _iron_ engaged columns on the face of that
+              one nearest to <placeName ref="#Bishop_Edyngton_s_chantry" type="chantry">Bishop Edyngton's chantry</placeName>, it is said for the sake
+              of economy and strength! Some of the stained glass in the nave,
+              according to Mr. Le <persName ref="#Coutier">Coutier</persName>, dates from the time of <roleName>Bishop</roleName> <persName ref="#Edyngton">Edyngton</persName>,
+              and that representing <persName ref="#Richard_II">Richard II</persName> is a work contemporary with <roleName>Bishop</roleName>
+              <persName ref="#Wykeham">Wykeham</persName>. This part of the building has been the scene of many
+              progresses--magnificent and sad--from the coronation processions of
+              the early kings and the slow march of their funerals to that of the
+              wedding of <persName ref="#Mary_I">Mary I</persName>, when the queen blazed with jewels "to such an
+              extent that the eye was blinded as it looked upon her." 
+              But the most unforgettable of all was on that dreadful day when the troops of
+              <persName ref="#Waller">Waller</persName> marched up the nave, some mounted and all in war array, to
+              despoil the tombs of bishop and knight of their emblems of piety and
+              honour and to destroy anything beautiful that could be reached with pike or sword.</p>
+                  
+            <p>On the right of the choir steps is <placeName ref="#Bishop_Edyngton_s_chantry" type="chapel">Bishop Edyngton's chantry</placeName> and on
+               first <roleName type="dean">Dean</roleName>. In the centre of the choir stands the reputed tomb of
+                the left the grave of the last <roleName type="prior">Prior</roleName>, <persName ref="#Kingsmill">Kingsmill</persName>, who afterwards became
+               first <roleName type="dean">Dean</roleName>. In the centre of the choir stands the reputed tomb of
+               <persName ref="#William_Rufus">William Rufus</persName>. This part of the building forms a mortuary chapel for
+               several of the early <persName ref="#English">English</persName> Kings, including <persName ref="#Canute">Canute</persName>. Their remains,
+               with those of several bishops, rest in the oak chests that lie on the
+               top of the choir screen. They were deposited here by <roleName>Bishop</roleName> <persName ref="#Fox">Fox</persName> in
+               <date when="1534">1534</date>. This prelate was responsible for the beautiful east window; a
+               perfect specimen of old stained glass. The fine pulpit dates from
+               <date when="1520">1520</date>. In the choir, the scene of <eventName>Edward Confessor's coronation</eventName> in
+               <date when="1043">1043</date>, <persName ref="#Mary_I">Mary I</persName> and <persName ref="#Philip">Philip</persName> of <placeName ref="#Spain" type="nation">Spain</placeName> were married. The fine carvings of
+               the stalls date from <date when="1296">1296</date> and their canopies from <date when="1390">1390</date>. They are among
+               the earliest specimens of their kind in <placeName ref="#Europe" type="continet">Europe</placeName>.</p>           
+        </div>       
+    </body>
+  </text> 
+</TEI>
